@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="jquery-1.11.1.js"></script>
+		<script src="index.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+    <div id="overlay"></div>
+        <header>
+        <h1 style="float: left;margin-left: 150px;position:relative;">Vestuário Unisex</h1>
+        <div style="clear:both;"></div>
+
+        </header>
+
+
+		<div id="cart">
+            <img src='images/checkoutvector.jpg' id="cartImage" />
+            <span id="cartImageText">Muito bem! Se quiser continuar comprando, fique à vontade.</span>
+			<h2>Carrinho</h2>
+            <h3>Total: <span id="cartTotal" data-cartTotal="0">R$ 0.00</span></h3>
+            <form action="#"><button id="checkout" >Finalizar</button></form>
+		</div>
+
+
+		<div class="product featured" id="box" data-name="Camisa Coral" data-price="339.99">
+            <img src='images/camisacoral.jpg' class="productImage" />
+            <h1 class="productName">Camisa Coral</h1>
+            <h3 class="price">R$339.99</h3>
+            <h3 class="quantity"></h3>
+            <button class="removeFromCart">Remover do carrinho</button>
+			<button class="add">Adicionar</button>
+			<button class="tellMore">Mais Info</button>
+			<div class="moreInfo">
+                <p>Hey! 100% algodão, excel entequalidade.</p>
+			</div>
+		</div>
+
+		<div class="product featured" id="otherBox" data-name="Calça Social" data-price="249.99">
+            <img src='images/calcaskinny.jpg' class="productImage" />
+            <h1 class="productName">Calça Social</h1>
+            <h3 class="price">R$249.99</h3>
+            <h3 class="quantity"></h3>
+            <button class="removeFromCart">Remover do carrinho</button>
+			<button class="add">Adicionar</button>
+			<button class="tellMore">Mais Info</button>
+            <div class="moreInfo">
+                <p>That, or Duder. His Dudeness. Or El Duderino, if you know, you're not into the whole brevity thing. We wanted to talk about little Larry. May we come in? DO YOU SEE WHAT HAPPENS, LARRY? They call Los Angeles the City of Angels. I didn't find it to be that exactly, but I'll allow as there are some nice folks there. </p>        </div>
+		</div>
+
+		<div class="product" id="yetAnotherBox" data-name="Meia Social" data-price="289.99">
+            <img src='images/vestido.jpg' class="productImage" />
+            <h1 class="productName">Vestido</h1>
+            <h3 class="price">R$289.99</h3>
+            <h3 class="quantity"></h3>
+            <button class="removeFromCart">Remover do carrinho</button>
+			<button class="add">Adicionar</button>
+			<button class="tellMore">Mais Info</button>
+            <div class="moreInfo">
+                <p>That, or Duder. His Dudeness. Or El Duderino, if you know, you're not into the whole brevity thing. We wanted to talk about little Larry. May we come in? DO YOU SEE WHAT HAPPENS, LARRY? They call Los Angeles the City of Angels. I didn't find it to be that exactly, but I'll allow as there are some nice folks there. </p>        </div>
+		</div>
+
+
+	</body>
+</html>

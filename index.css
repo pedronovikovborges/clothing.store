@@ -1,0 +1,220 @@
+body {
+    background: url('images/fundo.jpg') top center #000 fixed;
+    background-repeat: repeat-x,y;
+    width: 800px;
+    margin: 0 auto;
+    font-family: "Helvetica", sans-serif;
+}
+
+header {
+    font-size: 1.5em;
+    margin:30px 0;
+    border: 1px solid #808080;
+    padding:10px;
+    background: url(images/camisasloja-esqueceram.jpg) 100% 100%;
+    color: #FFF;
+        text-shadow: 2px 2px 10px #000;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2em;
+}
+h3 {
+    line-height: 1em;
+    margin: 0.5em auto;
+}
+p {
+}
+
+.product {
+	min-height: 200px;
+	width: 500px;
+	border: 1px solid black;
+    position:relative;
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    background-color: #FFF;
+}
+
+.moreInfo {
+	display: none;
+    width:330px;
+}
+
+#cart {
+    position:relative;
+    float: right;
+min-height: 428px;
+width: 232px;
+    border: 3px double red;
+        padding: 10px;
+    margin: 5px;
+    background-color: #FFF;
+
+}
+
+#cart .product {
+    height: 150px;
+    width: 200px;
+}
+
+
+#cart .product button {
+    visibility: hidden;
+}
+#cart .product img {
+height:70px;
+width:50px;
+top: 6px;
+right: 4px;
+}
+
+#checkout {
+    width: 100%;
+    height: 30px;
+}
+
+.productImage {
+    position: relative;
+    float: right;
+    top: 0;
+    right: 15px;
+}
+
+
+#cart .product button.removeFromCart {
+    visibility: visible;
+}
+
+.product button.removeFromCart, #cartImage, #cartImageText {
+    display: none;
+}
+
+.featured
+{
+  /*width: 8em;*/
+  /*font-weight: bold;*/
+  /*text-align: center;*/
+  /*padding: 0.5em 0;*/
+  /*margin: 50px auto;*/
+  /*color: #fff;*/
+  /*background-color: #00c;*/
+  /*border-radius: 3px;*/
+  -webkit-animation: glow 2s ease-in-out infinite;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes glow
+{
+  50% { box-shadow: 0 0 20px #ff581c; }
+}
+
+@keyframes glow
+{
+  50% { box-shadow: 0 0 20px #ff581c; }
+}
+
+#cart .featured {
+  -webkit-animation: glow 500ms ease-in-out 100ms ;
+  animation: glow 500ms  ease-in-out 100ms;
+
+}
+
+#cart .product:hover {
+background: none;
+}
+
+.product:hover {
+    /*background: linear-gradient(*/
+  /*to bottom,*/
+  /*#F5F5F5,*/
+  /*#F5F5F5 50%,*/
+  /*#FDFDFD 50%,*/
+  /*#FDFDFD*/
+/*);*/
+/* The rectangle in which to repeat.*/
+   /*It can be fully wide in this case */
+/*background-size: 100% 20px;*/
+    border-style: dotted;
+}
+
+
+.featured:before {
+    content: '10% OFF';
+        position: absolute;
+    top: 0;
+    right: -0.5em;
+    width: 243px;
+    font-size: 2.5em;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    color: #ffff00;
+    transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    z-index: 99;
+    text-shadow: 2px 2px 10px #000;
+    /*overflow: hidden;*/
+}
+
+#cart .featured:before {
+    content: "";
+}
+
+.featured .price {
+    position: relative;
+}
+
+.featured .price:after {
+border-bottom: 3px solid #ff4f01;
+    content: "";
+    left: -6px;
+    position: absolute;
+    /*right: 84%;*/
+    width:83px;
+    top: 25%;
+}
+
+#confirmPage {
+    height:100%;
+    width:100%;
+
+}
+
+#overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    display: none;
+    background-color: white;
+    text-align: center;
+}
+
+/*.overlay div {*/
+    /*position:relative;*/
+    /*display:inline-block;*/
+    /*top:50%;*/
+    /*margin:-50% 5px 0 0;*/
+/*}*/
+
+.rotate {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+.neg_rotate {
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
